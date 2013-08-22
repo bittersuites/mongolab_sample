@@ -6,6 +6,7 @@ form(action="/completetask", method="post")
       td Category
       td Date
       td Complete
+      #tasks
     - each task in tasks
       tr
         td #{task.itemName}
