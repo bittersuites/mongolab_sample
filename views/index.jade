@@ -6,7 +6,9 @@ form(action="/completetask", method="post")
       td Category
       td Date
       td Complete
+      /*
       #tasks
+      
     - each task in tasks
       tr
         td #{task.itemName}
@@ -18,6 +20,7 @@ form(action="/completetask", method="post")
         td
           input(type="checkbox", name="#{task._id}", value="#{!task.itemCompleted}", checked=task.itemCompleted)
   input(type="submit", value="Update tasks")
+*?
 hr
 form(action="/addtask", method="post")
   table(border="1") 
