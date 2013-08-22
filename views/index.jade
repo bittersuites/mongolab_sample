@@ -18,8 +18,8 @@ form(action="/completetask", method="post")
         - var year  = task.itemDate.getFullYear();
         td #{month + "/" + day + "/" + year}
         td
-          input(type="checkbox", name="#{task._id}", value="#{!task.itemCompleted}", checked=task.itemCompleted)
-  input(type="submit", value="Update tasks")
+//-input(type="checkbox", name="#{task._id}", value="#{!task.itemCompleted}", checked=task.itemCompleted)
+  //input(type="submit", value="Update tasks")
 */
 hr
 form(action="/addtask", method="post")
