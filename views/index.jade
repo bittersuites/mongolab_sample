@@ -1,4 +1,4 @@
-h1= title
+h1#{title}
 form(action="/completetask", method="post")
   table(border="1")
     tr
@@ -6,7 +6,7 @@ form(action="/completetask", method="post")
       td Category
       td Date
       td Complete
-    each task in tasks
+    - each task in tasks
       tr
         td #{task.itemName}
         td #{task.itemCategory}
